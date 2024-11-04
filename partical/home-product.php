@@ -2,7 +2,7 @@
     <div class="section-product py-5">
         <h4 class="tittle-section">Sản phẩm nổi bật</h4>
         <div class="row">
-            <?php for ($i = 0; $i < 12; $i++) : ?>
+            <?php for ($i = 0; $i < 8; $i++) : ?>
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card mb-4">
                         <img src="images/sp1.webp" class="card-img-top" alt="...">

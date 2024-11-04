@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
                 <ul class="menu-footer">
-                    <img src="images/logo1.webp" alt="" width="150px" height="150px">
+                    <img src="images/LogoVn1.png" alt="" width="150px" height="150px">
                 </ul>
                 <h5>Địa chỉ: Dịch Vọng - Cầu Giấy - Hà Nội</h5>
                 <h6>Email:<a href="">mungnvph52815@gmail.com</a></h6>
@@ -28,12 +28,12 @@
                 <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/gundamchat24h" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgundamchat24h&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width="><span style="vertical-align: bottom; width: 265px; height: 130px;"><iframe name="f1aa3cae05446ef1c" width="1000px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v16.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df53695d0872ad6349%26domain%3Dgundamchat.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fgundamchat.com%252Ff0df4b775bf81113c%26relation%3Dparent.parent&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgundamchat24h&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width=" style="border: none; visibility: visible; width: 265px; height: 130px;" class=""></iframe></span></div>
             </div>
             <div class="col-12 text-center py-3">
-                Bản quyền thuộc về GundamGDC. Cung cấp bởi Sapo.
+                Bản quyền thuộc về Modelkit Store VN. Cung cấp bởi Sapo.
             </div>
         </div>
     </div>
 </footer>
-
+<?php include "action-button.php"; ?>
 <script src="./asset/js/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="./asset/slick-1.8.1/slick/slick.min.js"></script>
 
@@ -41,10 +41,12 @@
     jQuery(document).ready(function($) {
         $('.related-product').slick({
             dots: true,
-            infinite: false,
+            infinite: true,
             speed: 300,
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoSpeed: 500,
             responsive: [{
                     breakpoint: 1024,
                     settings: {
@@ -65,12 +67,10 @@
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots: false
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
     })
