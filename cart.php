@@ -9,7 +9,7 @@
             <div class="col-12 col-lg-7 col-xl-8">
                 <div class="card">
                     <div class="card-header">
-                        
+
                     </div>
                     <div class="table-responsive">
                         <table class="table">
@@ -25,7 +25,7 @@
                             <tbody>
                                 <?php for ($i = 0; $i < 1; $i++) : ?>
                                     <tr>
-                                    <th scope="col" style="text-align: center;"><input type="checkbox" name="" id=""></th>
+                                        <th scope="col" style="text-align: center;"><input type="checkbox" name="" id=""></th>
                                         <td>
                                             <img src="images/robo1 1.png" height="45px" alt="">
                                         </td>

@@ -1,28 +1,25 @@
-<?php include "partical/header.php"; ?>
+<?php include "partical/header-cart.php"; ?>
 
-<section class="checkout">
+<section class="checkout py-3">
     <div class="container">
-        <h1 class="tittle text-center">Thanh toán</h1>
-        <div class="row">
+        <h2 class="tittle mb-4">Thanh toán</h2>
+        <form class="row" id="checkoutForm">
             <div class="col-12 col-lg-7 col-xl-6">
                 <div class="card">
-                    <div class="card-header">Thông tin khách hàng</div>
+                    <div class="card-header">Thông tin mua hàng</div>
                     <div class="card-body">
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" value="mungnvph52815@gmail.com" class="form-control" name="email" id="email" placeholder="Nhập email...">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <label for="fullname" class="form-label">Họ và tên</label>
+                            <input type="text" value="Nguyễn Văn Mừng" class="form-control" name="fullname" id="fullname" placeholder="Nhập họ và tên">
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-12 col-lg-5 col-xl-6">
                 <div class="card">
                     <div class="card-header">
@@ -72,10 +69,12 @@
                             </tr>
                         </tbody>
                     </table>
-                    <button class="btn btn-primary">Thanh toán</button>
+
+                    <button type="submit" class="btn btn-primary">Thanh toán</button>
                 </div>
             </div>
-        </div>
+
+        </form>
     </div>
 </section>
 <br>
